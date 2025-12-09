@@ -20,10 +20,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore
-        run: dotnet restore src/src.sln
+        run: dotnet restore CleanApp.slnx
 
       - name: Build
-        run: dotnet build src/src.sln --configuration Release --no-restore
+        run: dotnet build CleanApp.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test src/src.sln --configuration Release --no-build --collect:"XPlat Code Coverage"
+        run: dotnet test CleanApp.slnx --configuration Release --no-build --collect:"XPlat Code Coverage"
