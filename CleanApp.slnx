@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CleanApp.AppHost/CleanApp.AppHost.csproj" />
+    <Project Path="src/CleanApp.Contracts/CleanApp.Contracts.csproj" />
+    <Project Path="src/CleanApp.Core/CleanApp.Core.csproj" />
+    <Project Path="src/CleanApp.Domain/CleanApp.Domain.csproj" />
+    <Project Path="src/CleanApp.Infrastructure/CleanApp.Infrastructure.csproj" />
+    <Project Path="src/CleanApp.ServiceDefaults/CleanApp.ServiceDefaults.csproj" />
+    <Project Path="src/CleanApp/CleanApp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="test/CleanAppCoreTests/CleanAppCoreTests.csproj" Id="f8956088-de19-430a-8d7a-a3bbde0db1be" />
+  </Folder>
+</Solution>

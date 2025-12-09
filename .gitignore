@@ -1,0 +1,110 @@
+## Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esult*/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Rider / IntelliJ
+.idea/
+*.sln.iml
+
+## NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.snupkg
+.nuget/
+
+## Dotnet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+
+## Logs & Diagnostics
+*.log
+*.tlog
+*.svclog
+*.wrn
+*.err
+
+## Generated files
+Generated*/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.cache
+*.ghash
+
+## Publish outputs
+publish/
+[Tt]ools/
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## DotCover
+*.dotCover
+
+## Azure
+PublishScripts/
+
+## Docker
+*.pid
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Local environment & secrets
+*.local.json
+appsettings.*.local.json
+UserSecrets*/
+*.env
+.env.*
+
+## Coverage
+coverage*/
+*.coverage
+*.coveragexml
+
+## Others
+*.orig
+*.bak
+*.swp
+*.swo
