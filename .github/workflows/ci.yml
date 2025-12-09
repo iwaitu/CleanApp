@@ -1,0 +1,29 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore src/src.sln
+
+      - name: Build
+        run: dotnet build src/src.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test src/src.sln --configuration Release --no-build --collect:"XPlat Code Coverage"
